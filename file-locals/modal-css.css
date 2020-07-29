@@ -1,0 +1,152 @@
+/* đoạn code cho modal register */
+:root {
+    --main-text: #9c9c9c;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.modal-container
+{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-login
+{
+    background-color: #252525;
+    background-image: url('../image/O81zBai.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    /* filter: blur(5px); */
+}
+
+.modal-login 
+{
+    position: absolute;
+    height: auto;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter: blur(40%);
+    border-radius: 5px;
+    /* border: 2px solid rgb(78, 78, 78); */
+}
+
+.modal-login__margin-inside
+{
+    margin: 30px;
+}
+
+.margin-inside
+{
+    margin-bottom: 10px;
+}
+
+.margin-inside__login
+{
+    margin: 5px 0;
+    color: #00FF73;
+    font-family: 'Pacifico', cursive;
+    /* text-shadow: 2px 2px #e5ff00; */
+}
+
+.form-group
+{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.set-input
+{
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    width: calc(100%);
+    height: 30px;
+    border: unset;
+    border-bottom: 2px solid var(--main-text);
+    color: rgb(173, 173, 173);
+    font-size: 15px;
+    font-family: 'MuseoModerno', cursive;
+    padding: unset;
+    padding-left: 0px;
+}
+
+@keyframes border-in-out 
+{
+    0%
+    {
+        width: 0;
+    }
+    100%
+    {
+        width: 100%;
+    }
+}
+
+.set-input:focus ~ .border-run
+{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 2px;
+    background-color: #00ff73;
+    animation: border-in-out 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+::placeholder 
+{
+    color: var(--main-text);
+    font-size: 15px;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.modal-login__submit
+{
+    display: block;
+    margin: 18px 0 0 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid #5EEDB5;
+    background-color: #00FF73;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.modal-login__submit:active
+{
+    border-color: #126334;
+}
+
+.notify-input .note-warming
+{
+    color: rgb(238, 0, 0);
+    font-family: 'MuseoModerno', cursive;
+    font-size: 12px;
+    display: block;
+    margin-top: 2px;
+}
+
+.notify-input .set-input
+{
+    border-color: rgb(238, 0, 0);
+}
+
+.font-common 
+{
+    font-family: 'MuseoModerno', cursive;
+    font-size: 16px;
+    color: #00ff73;
+}
+
+/* đoạn code cho modal register */
